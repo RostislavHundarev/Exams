@@ -1,5 +1,5 @@
 // Get month number
-'use strict';
+
 
 const Months = [
   'jan',
@@ -17,7 +17,8 @@ const Months = [
 ];
 
 const month = (s) => {
-  const month = s.toLowerCase().substring(0, 3);
+  const wordsLength = 3;
+  const month = s.toLowerCase().substring(0, wordsLength);
   const monthIndex = Months.indexOf(month);
   return monthIndex !== -1 ? monthIndex + 1 : -1;
 };
